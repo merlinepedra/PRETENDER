@@ -75,6 +75,10 @@ func (c Config) PrintSummary() {
 		fmt.Printf("IPv6 relayed to: %s\n", c.RelayIPv6)
 	}
 
+	if c.SOAHostname != "" {
+		fmt.Printf("SOA Requests answered with: %s", c.SOAHostname)
+	}
+
 	switch {
 	case c.DryMode:
 		var raNotice string
