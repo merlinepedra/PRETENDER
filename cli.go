@@ -76,7 +76,7 @@ func (c Config) PrintSummary() {
 	}
 
 	if c.SOAHostname != "" {
-		fmt.Printf("SOA Requests answered with: %s", c.SOAHostname)
+		fmt.Printf("SOA Requests answered with: %s\n", c.SOAHostname)
 	}
 
 	switch {
